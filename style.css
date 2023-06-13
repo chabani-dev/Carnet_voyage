@@ -1,0 +1,569 @@
+/* Eléments principaux de la page */
+
+body
+{
+    background: url('images/fond_jaune.png');
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #181818;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#bloc_page
+{
+    width: 900px;
+    margin: auto;
+}
+
+section h1, footer h1, nav a
+{
+    font-family: Dayrom, serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin: 20px auto;
+}
+/* Header */
+
+header
+{
+    background: url('images/separateur.png') repeat-x bottom;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#titre_principal
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+#logo img
+{
+    width: 59px;
+    height: 60px;
+    clip-path: circle(65%);
+}
+
+header h1
+{
+    font-family: 'BallparkWeiner', serif;
+    font-size: 2.5em;
+    font-weight: normal;
+    margin: 0 0 0 10px;
+}
+
+header h2
+{
+    font-family: Dayrom, serif;
+    font-size: 15px;
+    margin-top: 5px;
+    font-weight: bold;
+    font-style: italic;
+}
+/* Navigation */
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+nav li
+{
+    margin-right: 15px;
+}
+
+nav a
+{
+    font-size: 1.3em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}
+/* Bannière */
+
+#banniere_image
+{
+    margin-top: 15px;
+    height: 200px;
+    border-radius: 5px;
+    background: url('images/sanfrancisco.jpg') no-repeat;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 25px;
+}
+
+#banniere_description
+{
+    position: absolute;
+    bottom: 0;
+    border-radius: 0px 0px 5px 5px;
+    width: 99.5%;
+    height: 33px;
+    padding-top: 15px;
+    padding-left: 4px;
+    background-color: rgba(24,24,24,0.8);
+    color: white;
+    font-size: 0.8em;
+    
+}
+.bouton_rouge
+{
+    height: 25px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    background: url('images/fond_degraderouge.png') repeat-x;
+    border: 1px solid #760001;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 3px 8px 0px 8px;
+    color: white;
+    text-decoration: none;
+}
+.bouton_rouge img
+{
+    border: 0;
+}
+/* Corps */
+
+section
+{
+    display: grid;
+    margin-bottom: 20px; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-items: stretch;
+    margin-bottom: 20px;
+}
+figure {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+figcaption.ico_categorie {
+    font-size: 29px;
+    font-family: cursive;
+    margin-left: 24px;
+    font-weight: bold;
+}
+img#photo_logo {
+    width: 70px;
+    margin-left: -40px;
+    clip-path: circle(51%);
+}
+figcaption.ico_categorie {
+    font-size: 24px;
+    font-family: cursive;
+    margin-left: 14px;
+    font-weight: bold;
+}
+figcaption.ico_categorie:hover{
+    color: gold;
+}
+article, aside
+{
+    text-align: justify;
+
+}
+
+article
+{
+    margin-right: 20px;
+    flex: 3;
+}
+.ico_categorie
+{
+    vertical-align: middle;
+    margin-right: 8px;
+    width: 40%;
+}
+aside p
+{
+    font-size: 15px;
+    font-style: italic;
+    font-family: serif;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+aside
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #706b64;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    color: white;
+    font-size: 0.9em;
+    width: 40%;
+    margin-right: -61px;
+    margin-bottom: 10px;
+}
+img#bandoulière {
+    width: 40%;
+    margin: 8px auto;
+    clip-path: circle(50%);
+}
+#fleche_bulle
+{
+    position: absolute;
+    top: 54px;
+    left: -21px;
+   width: 22px;
+}
+#photo_du_monde
+{
+    text-align: center;
+}
+
+#photo_du_monde img
+{
+    border: 1px solid #181818;
+}
+
+aside img
+{
+    width: 20px;
+    margin: 5px auto;
+}
+/* Footer */
+
+footer
+{
+    display: flex;
+    background:  url('images/ico_top.png') no-repeat top center, url('images/separateur.png') repeat-x top, url('images/ombre.png') repeat-x top;
+    padding-top: 25px;
+}
+
+footer p, footer ul
+{
+    font-size: 0.8em;
+}
+
+footer h1
+{
+    font-size: 1.1em;
+}
+
+
+#tweet
+{
+    width: 28%;
+}
+
+#mes_photos
+{
+    width: 35%;
+}
+
+#mes_amis
+{
+    width: 31%;
+}
+
+#mes_photos img
+{
+    border: 1px solid #181818;
+    margin-right: 2px;
+}
+
+#listes_amis
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+}
+
+#mes_amis ul
+{
+    list-style-image: url('images/ico_liensexterne.png');
+    padding-left: 2px;
+}
+
+#mes_amis a
+{
+    text-decoration: none;
+    color: #760001;
+}
+#part1{
+    display: grid;
+    grid-template-columns: 20% 20% 40%;
+    grid-template-areas: "dubai Montréal"
+    "londre nice ";
+  justify-content: space-between;
+    align-items: stretch;
+    justify-items: stretch;
+    gap: 12px;
+    width: 100%;
+    cursor: pointer;
+    margin: 20px auto;
+}
+#dubai{
+    grid-area: dubai;
+}
+img#dubai {
+    width: 226%;
+   object-fit: cover;
+    pointer-events: fill;
+    box-shadow: 0px 0px 12px 0px rgb(0 0 0 / 50%);
+    border-radius: 1rem 1rem 1rem 1rem;
+    padding: 2px;
+}
+img#dubai:hover{
+        
+    background-color: white;
+    color: #f3976c;
+    box-shadow: 2px 2px 20px #404040;
+    
+ }
+#Montréal{
+    grid-area: Montréal;
+}
+img#Montréal {
+    margin-left: 190px;
+    width: 220%;
+    object-fit: cover;
+    pointer-events: fill;
+    box-shadow: 0px 0px 12px 0px rgb(0 0 0 / 50%);
+    border-radius: 1rem 1rem 1rem 1rem;
+    padding: 2px;
+}
+img#Montréal:hover{
+        
+    background-color: white;
+    color: #f3976c;
+    box-shadow: 2px 2px 20px #404040;
+    
+ }
+#londre{
+    grid-area: londre;
+}
+img#londre {
+    width: 228%;
+    object-fit: cover;
+    pointer-events: fill;
+    box-shadow: 0px 0px 12px 0px rgb(0 0 0 / 50%);
+    border-radius: 1rem 1rem 1rem 1rem;
+    margin: 4px auto;
+    padding: 2px;
+}
+img#londre:hover{
+        
+    background-color: white;
+    color: #f3976c;
+    box-shadow: 2px 2px 20px #404040;
+    
+ }
+#nice{
+    grid-area: nice;
+}
+img#nice {
+    width: 224%;
+    margin-left: 185px;
+    object-fit: cover;
+    pointer-events: fill;
+    box-shadow: 0px 0px 12px 0px rgb(0 0 0 / 50%);
+    border-radius: 1rem 1rem 1rem 1rem;
+    padding: 2px;
+}
+img#nice:hover{
+        
+    background-color: white;
+    color: #f3976c;
+    box-shadow: 2px 2px 20px #404040;
+    
+ }
+#part2{
+    display: flex;
+    /*grid-template-columns: 30% 30% 40%;
+    grid-template-areas: "paris rome quebec"
+    "venise amsterdam espagne"
+    "tahiti mexique liban"
+    "pétra cuba egypte";*/
+    justify-content: space-between;
+    align-items: stretch;
+    justify-items: stretch;
+    gap: 12px;
+    width: 80%;
+    margin:  0 auto;
+}
+#paris{
+    grid-area: paris;
+}
+#rome{
+    grid-area: rome;
+}
+#quebec{
+    grid-area: quebec;
+}
+#venise{
+    grid-area: venise;
+}
+#amsterdam{
+    grid-area: amsterdam;
+}
+#espagne{
+    grid-area: espagne;
+}
+#pétra{
+    grid-area: pétra;
+}
+#tahiti{
+    grid-area: tahiti;
+}
+#mexique{
+    grid-area: mexique;
+}
+#liban{
+    grid-area: liban;
+}
+#cuba{
+    grid-area: cuba;
+}
+#egypte{
+    grid-area: egypte;
+}
+/* @madia */
+@media screen and (max-width: 400px) {
+    .gallery_photo{
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+            "dubia dubia"
+            "dubia dubia"
+            "Montréal londre "
+            "nice paris"
+            ;
+        width: 100%;
+    }
+
+    #part1, #part2{
+        flex-direction: column;
+    }
+    }
+@media (max-width: 1024px){
+
+    #bloc_page {
+    width: auto;
+}
+       nav {
+    width: auto;
+    text-align: left;
+}
+#banniere_image {
+    display: none;
+} 
+figure{
+width: auto;
+display: block;
+margin-bottom: 10px;
+}
+aside {
+width: auto;
+display: block;
+margin-bottom: 10px;
+}
+#fleche_bulle {
+    display: none;
+}
+}
+/* section photo */
+.logo_reseaux {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+#gallery_photo1{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+#gallery_photo1 img {
+    width: 30%;
+    margin: 6px auto;
+}
+/*Loader */
+.loader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.90);
+  animation: loader 0.01s;
+  animation-delay: 1.75s;
+  animation-fill-mode: both;
+  z-index: 9999;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.loader__itemContainer{
+  display: flex;
+      width: 5rem;
+      justify-content: space-between;
+}
+.loader__item--1 {
+    background-color: #E34220;
+    animation-delay: .5s;
+
+}
+.loader__item {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 1rem;
+    animation: jump 1s;
+    animation-iteration-count: 1;
+  
+}
+.loader__item--2 {
+    background-color: #E3E020;
+    animation-delay: .25s;
+}
+.loader__item--3 {
+    background-color: #FF5733;
+    animation-delay: .5s;
+}
+.loader__item--4 {
+    background-color: #900C3F;
+    animation-delay: .5s;
+}
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+} 
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(0.5rem);
+  }
+  75% {
+    transform: translateY(-0.5rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
